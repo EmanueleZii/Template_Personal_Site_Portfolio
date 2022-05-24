@@ -61,9 +61,6 @@ hr{
 
 .fullstack,
 .title{
-  font-family: 'Merriweather', serif;
-  font-weight: normal;
-  line-height: 2;
   color: white;
 }
 
@@ -77,4 +74,9 @@ hr{
    position:absolute;
    left: 300px;
    bottom: 300px;
+}
+
+.copy{
+  color: black;
+  font-size: 8px;
 }

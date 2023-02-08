@@ -4,9 +4,45 @@ body{
   font-family: 'Merriweather', serif;
   background-color: #fff;
   font-size: 1.3em;
+  overflow-x: hidden;
+}
+/*menu*/
+.menu ul li{
+  list-style: none;
+  display: inline;
+  padding: 20px 20px;
+}
+.menu ul li a:hover{
+ cursor: pointer;
+ background-color: #293462;
+ color: #fff;
+ padding: 30px 30px;
 }
 
-
+/*fine menu*/
+/*portfolio*/
+.portfolio{
+  background-color: #fff;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+}
+.portfolio h3{
+  text-align: center;
+}
+.box{
+  padding: 20px 35px;
+}
+.box img{
+  width:400px;
+}
+.box img:hover{
+  padding-top: 10px;
+}
+/*fine portfolio*/
 h2,
 h3{
    font-family: 'Merriweather', serif;
@@ -83,4 +119,18 @@ hr{
 
 .footer-link{
   width: 50px;
+}
+
+/* responsive*/
+@media only screen and (max-width: 1200px) {
+  .container{
+    display: block;
+    margin: auto;
+  }
+  .menu ul li{
+    list-style: none;
+    display: block;
+    font-size:small;
+  }
+  
 }

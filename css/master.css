@@ -7,17 +7,32 @@ body{
   overflow-x: hidden;
 }
 /*menu*/
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #293462;
+  justify-content: center;
+}
+
+.menu ul li a{
+  color: #fff;
+  font-size: normal;
+}
+
 .menu ul li{
   list-style: none;
   display: inline;
-  padding: 20px 20px;
+  padding: 20px 20px; 
 }
+
 .menu ul li a:hover{
  cursor: pointer;
- background-color: #293462;
- color: #fff;
+ background-color: #fff;
+ color: #293462;
  padding: 30px 30px;
 }
+
 
 /*fine menu*/
 /*portfolio*/
@@ -73,9 +88,9 @@ hr{
 .hobby-icon,
 .email-icon,
 .icon-skills{
-  margin-top: 10px;
-  width: 200px;
-  border-radius: 50%;
+  margin-top: 40px;
+  width: 400px;
+  border-radius: 30%;
   background-color: #fff;
 }
 
@@ -129,8 +144,14 @@ hr{
   }
   .menu ul li{
     list-style: none;
-    display: block;
+    display: inline;
     font-size:small;
   }
+  .menu ul li a:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #293462;
+    padding: 5px 5px;
+   }
   
 }

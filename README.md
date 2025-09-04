@@ -1,7 +1,7 @@
-# Personal-Site
- Sito Personale
-Realizzato in HTML 
+### Template Sito Portfolio
+Questo è il template del mio vecchio Sito Personale Portfolio,
+e realizzato in modo molto semplice con un file html e un file css
 
-CSS 
+Realizzato in HTML-CSS
 
 The Icon Designed from freepik

@@ -39,6 +39,8 @@ body{
 /*portfolio*/
 .portfolio{
   background-color: #fff;
+  display: flex;
+  align-items: center;
 }
 .container{
   display: flex;

@@ -37,23 +37,24 @@ body{
 
 /*fine menu*/
 /*portfolio*/
-.portfolio{
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-}
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  margin: auto;
+  justify-content: center; /* centra i box orizzontalmente */
+  align-items: flex-start; /* allinea in alto le righe */
+  gap: 20px; /* spazio tra i box */
+  margin: 0 auto;
+  max-width: 1200px; /* opzionale */
+}
+
+.box {
+  flex: 1 1 300px; /* ogni box ha min 300px e cresce */
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
 }
 .portfolio h3{
   text-align: center;
-}
-.box{
-  padding: 20px 35px;
 }
 .box img{
   width:400px;

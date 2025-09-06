@@ -1,4 +1,5 @@
-body{
+/* Reset base */
+body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -7,156 +8,176 @@ body{
   overflow-x: hidden;
 }
 
-/*menu*/
+/* Menu */
 .menu {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 70px;
   background-color: #293462;
-  justify-content: center;
-}
-
-.menu ul li a{
-  color: #fff;
-  font-size: normal;
-}
-
-.menu ul li{
-  list-style: none;
-  display: inline;
-  padding: 20px 20px; 
-}
-
-.menu ul li a:hover{
- cursor: pointer;
- background-color: #fff;
- color: #293462;
- padding: 30px 30px;
-}
-
-
-/*fine menu*/
-/*portfolio*/
-.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centra i box orizzontalmente */
-  align-items: flex-start; /* allinea in alto le righe */
-  gap: 20px; /* spazio tra i box */
-  margin: 0 auto;
-  max-width: 1200px; /* opzionale */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #293462;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+/* Portfolio */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  margin: 100px auto 50px auto; /* spazio sotto il menu */
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .box {
-  flex: 1 1 300px; /* ogni box ha min 300px e cresce */
-  max-width: 400px;
   padding: 20px;
   text-align: center;
 }
-.portfolio h3{
-  text-align: center;
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
-.box img{
-  width:400px;
+
+.box img:hover {
+  transform: translateY(-10px);
 }
-.box img:hover{
-  padding-top: 10px;
+
+/* Titoli e testi */
+h1 {
+  font-size: 100%;
+  margin: 0;
 }
-/*fine portfolio*/
+
 h2,
-h3{
-   font-family: 'Merriweather', serif;
-   font-weight: normal;
-   line-height: 2;
-   color: black;
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  line-height: 2;
+  color: black;
 }
 
 p,
-a{
+a {
   color: black;
   text-decoration: none;
   text-align: center;
 }
 
-h1{
-  font-size: 100%;
-  margin: 0;
-}
-
-hr{
+hr {
   background-color: #333;
   border-style: dashed;
   width: 50%;
 }
 
+/* Immagini profilo e icone */
 .profilo,
 .hobby-icon,
 .email-icon,
-.icon-skills{
+.icon-skills {
   margin-top: 40px;
   width: 400px;
   border-radius: 30%;
   background-color: #fff;
 }
 
-.city-img{
+.city-img {
   width: 20%;
   margin-bottom: 10px;
 }
 
-.top-container{
+/* Hero / top container */
+.top-container {
   background-color: #293462;
   position: relative;
   padding-top: 100px;
 }
 
-.fullstack{
+.fullstack {
   text-decoration: underline;
-
 }
 
 .fullstack,
-.title{
+.title {
   color: white;
 }
 
-.top-cloud{
+.top-cloud {
   position: absolute;
   right: 300px;
   top: 50px;
 }
 
-.bottom-cloud{
-   position:absolute;
-   left: 300px;
-   bottom: 300px;
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
 }
 
-.copy{
+/* Footer */
+.copy {
   color: black;
   font-size: 8px;
 }
 
-.footer-link{
+.footer-link {
   width: 50px;
 }
 
-/* responsive*/
-@media only screen and (max-width: 1200px) {
-  .container{
-    display: block;
-    margin: auto;
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .menu ul li {
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  .menu ul li{
-    list-style: none;
-    display: inline;
-    font-size:small;
+
+  .menu ul li a:hover {
+    padding: 10px 15px;
   }
-  .menu ul li a:hover{
-    cursor: pointer;
-    background-color: #fff;
-    color: #293462;
-    padding: 5px 5px;
-   }
-  
+
+  .profilo,
+  .hobby-icon,
+  .email-icon,
+  .icon-skills {
+    width: 80%;
+  }
+
+  .city-img {
+    width: 50%;
+  }
+
+  .top-cloud,
+  .bottom-cloud {
+    display: none; /* nasconde le nuvole su mobile per più spazio */
+  }
 }

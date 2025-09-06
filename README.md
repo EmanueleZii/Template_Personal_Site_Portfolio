@@ -6,4 +6,4 @@ Realizzato in HTML-CSS
 
 The Icon Designed from freepik
 
-(SitoTemplate)[https://emanuelezii.github.io/Template_Personal_Site_Portfolio/]
+[SitoTemplate][https://emanuelezii.github.io/Template_Personal_Site_Portfolio/]
